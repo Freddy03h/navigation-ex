@@ -303,7 +303,7 @@ export default class HeaderSegment extends React.Component<Props, State> {
           style={[StyleSheet.absoluteFill, backgroundStyle]}
         >
           {headerBackground ? (
-            headerBackground()
+            headerBackground({ style: safeStyles })
           ) : headerTransparent ? null : (
             <HeaderBackground style={safeStyles} />
           )}
